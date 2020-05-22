@@ -2,6 +2,7 @@ import 'reflect-metadata';
 
 import express, { Request, Response, NextFunction } from 'express';
 import 'express-async-errors';
+import cors from 'cors';
 import routes from './routes';
 import uploadConfig from './configuration/upload';
 import AppError from './errors/AppError';
@@ -9,6 +10,9 @@ import AppError from './errors/AppError';
 import './database';
 
 const app = express();
+
+// Access control by origin
+app.use(cors());
 
 app.use(express.json());
 
