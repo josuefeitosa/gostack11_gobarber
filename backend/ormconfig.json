@@ -2,8 +2,8 @@
   "type": "postgres",
   "host": "localhost",
   "port": 5432,
-  "username": "postgres",
-  "password": "docker",
+  "username": "docker",
+  "password": "123",
   "database": "gobarber",
   "entities": [
     "./src/modules/**/infra/typeorm/entities/*.ts"
