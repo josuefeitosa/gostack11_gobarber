@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serving Static Files
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 
 // Using routes.ts
 app.use(routes);
