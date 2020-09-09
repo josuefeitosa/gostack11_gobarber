@@ -1,3 +1,3 @@
-import { createConnection } from 'typeorm';
+import { createConnections } from 'typeorm';
 
-createConnection(); // lê o ormconfig.json para fazer conexão com o BD
+createConnections(); // lê o ormconfig.json para fazer conexão com o BD
